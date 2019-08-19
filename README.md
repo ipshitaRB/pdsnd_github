@@ -1,15 +1,15 @@
-### Date created
-Include the date you created this project and README file.
+August 19, 2019
 
-### Project Title
-Replace the Project Title
+Explore Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+Allows user to view selective data from the bikeshare data available from Chicago, New York and Washington
 
 ### Files used
-Include the files used
+chicago.csv, new_york_city.csv, washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://stackoverflow.com/questions/12943819/how-to-prettyprint-a-json-file
+https://www.shanelynn.ie/select-pandas-dataframe-rows-and-columns-using-iloc-loc-and-ix/
+https://datatofish.com/export-pandas-dataframe-json/
 
