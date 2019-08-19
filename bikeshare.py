@@ -199,28 +199,31 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
+    gender_str = "Gender"
+    birth_year_Str = 'Birth Year'
+    
     # Display counts of user types
     user_data = df['User Type'].value_counts().to_string()
     print(" User types and their frequencies : \n {} \n".format(user_data))
 
     # Display counts of gender
-    if 'Gender' in df:
-        gender_data = df['Gender'].value_counts().to_string()
+    if gender_str in df:
+        gender_data = df[gender_str].value_counts().to_string()
         print("Gender and their frequencies : \n {} \n".format(gender_data))
     else:
         print("No gender data available")
 
     # Display earliest, most recent, and most common year of birth
-    if 'Birth Year' in df:
+    if birth_year_Str in df:
         
-        earliest_birth_year = df['Birth Year'].min()
+        earliest_birth_year = df[birth_year_Str].min()
         print("Earliest Birth Year is {}.\n".format(earliest_birth_year))
         
-        recent_birth_year = df['Birth Year'].max()
+        recent_birth_year = df[birth_year_Str].max()
         print("Most recent Birth Year is {}.\n".format(recent_birth_year))
         
-        common_year = df['Birth Year'].value_counts().idxmax()
-        common_year_count = len(df[df['Birth Year'] == common_year])
+        common_year = df[birth_year_Str].value_counts().idxmax()
+        common_year_count = len(df[df[birth_year_Str] == common_year])
         print("Most common birth year is {} occurring {} number of times.\n".format(common_year,common_year_count))
         
     else:
