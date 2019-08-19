@@ -199,7 +199,10 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
+    """Displays statistics on bikeshare users.
+    INPUT:
+         df - data frame to print user statistics from
+    """
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -250,6 +253,8 @@ def print_chunks(df, position, size):
     
 def show_raw_data(df):
     """ Prompts user to show raw data
+	INPUT:
+         df - data frame to print rows from
     """
    
 
