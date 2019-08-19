@@ -1,6 +1,6 @@
 August 19, 2019
 
-Explore Bikeshare Data
+### Explore Bikeshare Data
 
 ### Description
 Allows user to view selective data from the bikeshare data available from Chicago, New York and Washington
