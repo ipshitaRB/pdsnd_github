@@ -249,23 +249,24 @@ def print_chunks(df, position, size):
 def show_raw_data(df):
     """ Prompts user to show raw data
     """
-   
+   	yes = 'yes'
+   	no = 'no'
 
     show_raw = input('\nWould you like to view raw data? Enter yes or no.\n').lower()
-    if show_raw == 'no':
+    if show_raw == no:
         return
-    elif show_raw == 'yes':
+    elif show_raw == yes:
         position = 0
         size = 5
         print_chunks(df, position, size)
             
         while True:
             show_raw = input("Would you like to see 5 more records? Enter yes or no. \n: ").lower()
-            if show_raw == "yes":
+            if show_raw == yes:
                 # Display 5 more lines
                 position += 5
                 print_chunks(df, position, size)
-            elif show_raw == "no":
+            elif show_raw == no:
                 return
             else:
                 print("Invalid answer")
