@@ -46,8 +46,7 @@ def get_filters():
     return city, month, day
 
 def validate_input(prompt, invalid_input_prompt, valid_inputs):
-    """
-    validates input(city, month, day) entered by the user till it is valid
+    """Validates input(city, month, day) entered by the user till it is valid
 
     Args:
         (str) prompt - message to prompt user to enter which data - city, month or day
@@ -116,6 +115,12 @@ def load_data(city, month, day):
     return df
 
 def show_most_popular(entity,value,frequency):
+    """Prints the most popular month, day of the week or hour and its frequency
+	Args:
+	(str) entity- could be month, day of the week or hour
+	(str) value- most popular value
+	(str) frquency- frequency of occurrence of the value
+	"""
     print("Most popular {} is {} occurring {} number of times.".format(entity,value,frequency))
 
 def time_stats(df):
